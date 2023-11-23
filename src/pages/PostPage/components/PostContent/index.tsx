@@ -14,21 +14,21 @@ export function PostContent({ content }: PostContentProps) {
       <ReactMarkdown
         children={ content }
         components={{
-          code({ inline, className, children, ...props }) {
+          code({ inlist, className, children, ...props }) {
             const match = /language-(\w+)/.exec(className || "");
-            return !inline && match ? (
+            return !inlist && match ? (
               <SyntaxHighlighter
                 children={ String(children).replace(/\n$/, "") }
                 style={ atomDark as any }
-                customStyle={{
+                customStyle={ {
                   backgroundColor: 'transparent'
-                }}
+                } }
                 language={ match[1] }
                 PreTag="div"
                 {...props }
               />
             ) : (
-              <code className={className} {...props}>
+              <code className={ className } {...props }>
                 {children}
               </code>
             );
