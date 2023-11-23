@@ -20,15 +20,15 @@ export function PostContent({ content }: PostContentProps) {
               <SyntaxHighlighter
                 children={ String(children).replace(/\n$/, "") }
                 style={ atomDark as any }
-                customStyle={ {
+                customStyle={{
                   backgroundColor: 'transparent'
-                } }
+                }}
                 language={ match[1] }
                 PreTag="div"
-                {...props }
+                // {...props }
               />
             ) : (
-              <code className={ className } {...props }>
+              <code className={className} {...props}>
                 {children}
               </code>
             );
