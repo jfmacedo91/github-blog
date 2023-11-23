@@ -19,13 +19,12 @@ export function PostContent({ content }: PostContentProps) {
             return !inlist && match ? (
               <SyntaxHighlighter
                 children={ String(children).replace(/\n$/, "") }
-                style={ atomDark as any }
+                style={ atomDark }
                 customStyle={{
                   backgroundColor: 'transparent'
                 }}
                 language={ match[1] }
                 PreTag="div"
-                // {...props }
               />
             ) : (
               <code className={className} {...props}>
