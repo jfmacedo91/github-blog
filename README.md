@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# Github Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/jfmacedo91/github-blog/main?color=%2332F8BC" />
+  <img src="https://img.shields.io/github/languages/count/jfmacedo91/github-blog?color=%2332F8BC" />
+  <img src="https://img.shields.io/github/languages/top/jfmacedo91/github-blog?color=%2332F8BC" />
+  <img src="https://img.shields.io/github/languages/code-size/jfmacedo91/github-blog?color=%2332F8BC" />
+</p>
 
-Currently, two official plugins are available:
+## Imagem
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](./.github/screenshot.png)
 
-## Expanding the ESLint configuration
+## Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Configure the top-level `parserOptions` property like this:
+- Axios
+- React
+- React Router Dom
+- React Hook Form
+- React Markdown
+- React Syntax Highlighter
+- Styled Components
+- Zod
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Autor
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[![Linkedin Badge](https://img.shields.io/badge/-Jean%20Fernandes%20de%20Macedo-0077B5?&logo=Linkedin&link=https://www.linkedin.com/in/jean-fernandes-de-macedo-b843a3194/)](https://www.linkedin.com/in/jfmacedo91/)
+[![Gmail Badge](https://img.shields.io/badge/-jfmacedo91@gmail.com-c14438?&logo=Gmail&logoColor=white&link=mailto:jfmacedo91@gmail.com)](mailto:jfmacedo91@gmail.com)
